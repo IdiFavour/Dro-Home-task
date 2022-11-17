@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Header from './components/Header'
+import Data from './components/Data'
+import React, { useState } from 'react';
+
+export default function App() {
+  const [query,setQuery] = useState<string>("")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <Header onSearch={(text)=>setQuery(text)} />
+      <div className="List container">
+        <Data query={query} />
+      </div>
     </div>
   );
 }
 
-export default App;
