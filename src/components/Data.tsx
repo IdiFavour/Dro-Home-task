@@ -11,7 +11,6 @@ function Data({ query }: DataProps) {
         
 
         new BooksApi().search(query).then((val) => {
-          
             setBooks(val)
         })
     }, [query])

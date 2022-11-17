@@ -44,3 +44,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Test the Search
+To run the search input all characters of the word you want to search.
+
+
+
+## Failed to Implement
+
+Pagination - Not enough Documentation on the api online or on the offical site to help futher understand what to do.
+
+Search by culture
