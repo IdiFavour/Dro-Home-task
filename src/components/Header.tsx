@@ -16,7 +16,7 @@ export default function Header({onSearch}:HeaderProps){
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search Books" aria-label="Search" onInput={(event)=>onSearch(event.currentTarget.value)}/>
-                        <button className="btn btn-outline-success" type="submit">Search</button>
+                        
                     </form>
                 </div>
                 </div>
